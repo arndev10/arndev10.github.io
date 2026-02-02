@@ -1,33 +1,21 @@
 # Despliegue en GitHub Pages (arndev10)
 
-Pasos para subir el proyecto a GitHub y publicarlo en **https://arndev10.github.io**.
+El proyecto está configurado para publicarse en **https://arndev10.github.io** (repo `arndev10.github.io`).
+
+**Remotos configurados:**
+- `origin` → https://github.com/arndev10/arnold-web-page-a
+- `pages` → https://github.com/arndev10/arndev10.github.io (sitio en la raíz)
+
+Para subir cambios al sitio público: `git push pages main`
 
 ---
 
-## Opción A: Sitio en la raíz (https://arndev10.github.io)
+## Activar GitHub Pages en arndev10.github.io
 
-Si quieres que el portfolio esté en **https://arndev10.github.io** (dominio arndev10):
-
-1. En GitHub crea un repositorio **nuevo** con nombre exacto: **`arndev10.github.io`** (usuario arndev10).
-2. Antes del primer push, edita `.github/workflows/deploy-pages.yml` y cambia la línea:
-   ```yaml
-   BASE_PATH: /arnold-web-page-a
-   ```
-   por:
-   ```yaml
-   BASE_PATH: ""
-   ```
-3. Sigue los pasos de la sección **"Pasos comunes"** más abajo, usando el repo `arndev10.github.io`.
-
----
-
-## Opción B: Sitio en un subdirectorio (https://arndev10.github.io/arnold-web-page-a)
-
-Si usas el repo actual **arnold-web-page-a**, la URL será:
-
-**https://arndev10.github.io/arnold-web-page-a/**
-
-No cambies nada en el workflow. Solo sigue los **Pasos comunes**.
+1. Entra a **https://github.com/arndev10/arndev10.github.io**
+2. **Settings** → **Pages**
+3. En **"Build and deployment"** → **Source** elige **GitHub Actions**
+4. El workflow se ejecutará en cada push a `main`; el sitio quedará en **https://arndev10.github.io**
 
 ---
 
@@ -78,15 +66,15 @@ git push -u origin main
 
 ### 4. Actualizaciones futuras
 
-Cada vez que hagas:
+Para actualizar el sitio en **https://arndev10.github.io**:
 
 ```powershell
 git add .
 git commit -m "Tu mensaje"
-git push origin main
+git push pages main
 ```
 
-se volverá a ejecutar el workflow y se actualizará el sitio en GitHub Pages.
+(Opcional: `git push origin main` para subir también a arnold-web-page-a.)
 
 ---
 
