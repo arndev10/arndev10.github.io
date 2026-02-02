@@ -3,143 +3,107 @@
 import { useLanguage } from '@/contexts/LanguageContext'
 import { translations } from '@/lib/translations'
 
+const experience = [
+  {
+    titleKey: 'pm',
+    company: 'MSI Americas',
+    period: 'Oct 2023 – Present',
+    location: 'Lima, Perú',
+    achievementsKey: 'msi',
+    tech: ['Python', 'Agile', 'Stakeholder Mgmt', 'Automation'],
+  },
+  {
+    titleKey: 'pmFreelance',
+    company: 'JA&DE Ingenieros S.A / A&M Ingeniería',
+    period: 'Feb 2022 – Oct 2023',
+    location: 'Lima, Perú',
+    achievementsKey: 'freelance',
+    tech: ['Scrum', 'Kanban', 'Risk Mgmt', 'Data Analysis'],
+  },
+]
+
 export default function Experience() {
   const { language } = useLanguage()
   const t = translations[language].experience
 
-  const highlights = [
-    {
-      metric: '7',
-      label: t.metrics.projects,
-      description: t.descriptions.projects
-    },
-    {
-      metric: '99.5%',
-      label: t.metrics.reduction,
-      description: t.descriptions.reduction
-    },
-    {
-      metric: '$1.5M+',
-      label: t.metrics.value,
-      description: t.descriptions.value
-    },
-    {
-      metric: '6+',
-      label: t.metrics.years,
-      description: t.descriptions.years
-    }
-  ]
+  const titles: Record<string, string> = {
+    pm: language === 'es' ? 'Project Manager' : 'Project Manager',
+    pmFreelance: language === 'es' ? 'Project Manager Freelancer' : 'Project Manager Freelancer',
+  }
 
-  const experience = [
-    {
-      title: language === 'es' ? 'Project Manager' : 'Project Manager',
-      company: 'MSI Americas',
-      period: 'Oct 2023 – Oct 2025',
-      location: language === 'es' ? 'Lima, Perú' : 'Lima, Perú',
-      achievements: language === 'es' ? [
-        'Lideré 7 proyectos simultáneos en telecomunicaciones, logística, pruebas de señal de campo y desarrollo de software',
-        'Implementé metodologías ágiles e híbridas adaptadas a cada cliente',
-        'Negocié y gestioné stakeholders incluyendo Huawei, Nokia, Claro, Entel y Starlink',
-        'Actué como Data Translator para iniciativas de migración a la nube',
-        'Diseñé e implementé automatizaciones reduciendo tareas repetitivas en 99.5%'
-      ] : [
-        'Led 7 simultaneous projects in telecommunications, logistics, field signal testing, and software development',
-        'Implemented Agile and hybrid methodologies adapted to each client',
-        'Negotiated and managed stakeholders including Huawei, Nokia, Claro, Entel, and Starlink',
-        'Acted as Data Translator for cloud migration initiatives',
-        'Designed and implemented automations reducing repetitive tasks by 99.5%'
-      ]
-    },
-    {
-      title: language === 'es' ? 'Project Manager Freelancer' : 'Project Manager Freelancer',
-      company: 'JA&DE Ingenieros S.A / A&M Ingeniería y Proyectos SAC',
-      period: 'Feb 2022 - Oct 2023',
-      location: language === 'es' ? 'Lima, Perú' : 'Lima, Perú',
-      achievements: language === 'es' ? [
-        'Implementé Scrum y Kanban para seguimiento de proyectos',
-        'Mitigué riesgos operativos y financieros',
-        'Gestioné proyectos conforme a estándares internacionales',
-        'Usé análisis de datos para toma de decisiones estratégicas'
-      ] : [
-        'Implemented Scrum and Kanban for project tracking',
-        'Mitigated operational and financial risks',
-        'Managed projects under international standards',
-        'Used data analysis for strategic decision-making'
-      ]
-    }
-  ]
+  const achievements: Record<string, string[]> = {
+    msi:
+      language === 'es'
+        ? [
+            'Lideré 7 proyectos simultáneos en telecomunicaciones, logística, pruebas de señal y desarrollo de software',
+            'Implementé metodologías ágiles e híbridas adaptadas a cada cliente',
+            'Diseñé e implementé automatizaciones reduciendo tareas repetitivas en 99.5%',
+          ]
+        : [
+            'Led 7 simultaneous projects in telecommunications, logistics, field signal testing, and software development',
+            'Implemented Agile and hybrid methodologies adapted to each client',
+            'Designed and implemented automations reducing repetitive tasks by 99.5%',
+          ],
+    freelance:
+      language === 'es'
+        ? [
+            'Implementé Scrum y Kanban para seguimiento de proyectos',
+            'Mitigué riesgos operativos y financieros',
+            'Gestioné proyectos conforme a estándares internacionales',
+          ]
+        : [
+            'Implemented Scrum and Kanban for project tracking',
+            'Mitigated operational and financial risks',
+            'Managed projects under international standards',
+          ],
+  }
 
   return (
-    <section id="experience" className="py-20 bg-black">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          {t.title}
-        </h2>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {highlights.map((item, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-lg p-6 shadow-lg text-center border border-gray-800"
-            >
-              <div className="text-4xl font-bold mb-2">{item.metric}</div>
-              <div className="text-lg font-semibold mb-2">{item.label}</div>
-              <div className="text-sm text-blue-100">{item.description}</div>
+    <section id="experience" className="py-20">
+      <h2 className="flex items-center gap-3 text-2xl font-bold text-navy-50 mb-6 font-mono after:content-[''] after:flex-1 after:h-px after:max-w-[200px] after:bg-navy-500">
+        <span className="text-accent">02.</span>
+        {t.title}
+      </h2>
+      <div className="space-y-12">
+        {experience.map((exp, index) => (
+          <div key={index} className="relative pl-8 border-l-2 border-navy-600">
+            <div className="absolute -left-[9px] top-0 w-3 h-3 rounded-full bg-accent" />
+            <div className="mb-2 flex flex-wrap items-baseline gap-2">
+              <h3 className="text-navy-50 font-semibold">
+                {titles[exp.titleKey]} · <span className="text-accent">{exp.company}</span>
+              </h3>
+              <span className="font-mono text-xs text-navy-400">{exp.period}</span>
             </div>
-          ))}
-        </div>
-
-        <div className="space-y-8">
-          {experience.map((exp, index) => (
-            <div
-              key={index}
-              className="bg-gray-900 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow border border-gray-800"
-            >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-1">
-                    {exp.title}
-                  </h3>
-                  <p className="text-xl text-blue-400 font-semibold mb-2">
-                    {exp.company}
-                  </p>
-                </div>
-                <div className="text-right text-gray-300">
-                  <p className="font-medium">{exp.period}</p>
-                  <p className="text-sm">{exp.location}</p>
-                </div>
-              </div>
-              <ul className="space-y-2">
-                {exp.achievements.map((achievement, idx) => (
-                  <li key={idx} className="flex items-start text-white">
-                    <span className="text-blue-400 mr-2 mt-1">✓</span>
-                    <span>{achievement}</span>
-                  </li>
-                ))}
-              </ul>
+            <p className="text-navy-400 text-sm mb-4">{exp.location}</p>
+            <ul className="space-y-2 text-navy-300 text-sm mb-4">
+              {achievements[exp.achievementsKey].map((item, i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="text-accent shrink-0">▹</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-wrap gap-2">
+              {exp.tech.map((tag) => (
+                <span
+                  key={tag}
+                  className="font-mono text-xs px-2 py-1 rounded bg-navy-800/80 text-navy-300 border border-navy-600"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
-          ))}
-        </div>
-
-        <div className="mt-12 bg-gray-900 rounded-lg p-8 text-center border border-gray-800">
-          <h3 className="text-2xl font-bold text-white mb-4">
-            {t.stakeholderTitle}
-          </h3>
-          <p className="text-lg text-white mb-6">
-            {t.stakeholderDescription}
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {['Huawei', 'Nokia', 'Claro', 'Entel', 'Starlink'].map((company) => (
-              <span
-                key={company}
-                className="bg-gray-800 px-6 py-2 rounded-full font-semibold text-white shadow-sm border border-gray-700"
-              >
-                {company}
-              </span>
-            ))}
           </div>
-        </div>
+        ))}
       </div>
+      <a
+        href="https://www.linkedin.com/in/arnoldtorrespmpdev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-8 font-mono text-sm text-accent hover:underline"
+      >
+        {language === 'es' ? 'Ver currículum completo →' : 'View Full Résumé →'}
+      </a>
     </section>
   )
 }

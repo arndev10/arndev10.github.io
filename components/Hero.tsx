@@ -8,41 +8,25 @@ export default function Hero() {
   const t = translations[language].hero
 
   return (
-    <section className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-      <div className="flex-1">
-        <div className="flex items-center gap-3 mb-4">
-          <h1 className="text-4xl font-bold text-white">Arnold Torres Larriega</h1>
-          <span className="bg-green-500 text-black text-xs font-bold px-3 py-1 rounded-full">
-            {language === 'es' ? 'DISPONIBLE' : 'AVAILABLE FOR WORK'}
-          </span>
-        </div>
-        <p className="text-xl text-gray-300 mb-2">{t.subtitle1}</p>
-        <p className="text-lg text-gray-400 mb-6">
-          {language === 'es' ? 'Lima, Perú' : 'Lima, Perú'} • {language === 'es' ? 'Actualmente en' : 'Currently at'} MSI Americas
-        </p>
-        <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl">
-          {t.description}
-        </p>
-        <div className="flex gap-4">
-          <a
-            href="https://www.linkedin.com/in/arnoldtorrespmpdev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
-          >
-            + {language === 'es' ? 'Contratar' : 'Hire Me'}
-          </a>
-          <button
-            onClick={() => {
-              navigator.clipboard.writeText('arnoldtorresla@gmail.com')
-              alert(language === 'es' ? 'Email copiado!' : 'Email copied!')
-            }}
-            className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-full font-semibold transition-colors border border-gray-700"
-          >
-            {language === 'es' ? 'Copiar Email' : 'Copy Email'}
-          </button>
-        </div>
-      </div>
+    <section className="min-h-[80vh] flex flex-col justify-center">
+      <p className="font-mono text-accent text-sm mb-4">
+        {language === 'es' ? 'Hola, mi nombre es' : 'Hi, my name is'}
+      </p>
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-50 mb-4 leading-tight">
+        Arnold Torres Larriega.
+      </h1>
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-200 mb-6 leading-tight">
+        {t.subtitle1}
+      </h2>
+      <p className="text-navy-300 max-w-[540px] text-lg leading-relaxed mb-10">
+        {t.description}
+      </p>
+      <a
+        href="mailto:arnoldtorresla@gmail.com"
+        className="inline-block border border-accent text-accent px-6 py-3 font-mono text-sm rounded hover:bg-accent-dim transition-colors w-fit"
+      >
+        {language === 'es' ? 'Ponte en contacto' : 'Get In Touch'}
+      </a>
     </section>
   )
 }
