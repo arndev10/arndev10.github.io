@@ -4,15 +4,15 @@ export const translations = {
   es: {
     hero: {
       title: 'Arnold Torres Larriega',
-      subtitle1: 'Project Manager Certificado PMP®',
-      subtitle2: 'Desarrollador Full-Stack | Especialista en Automatización Python',
-      description: 'Transformando requerimientos de negocio en soluciones técnicas. Construyendo MVPs que evolucionan en aplicaciones listas para producción.',
+      subtitle1: 'Project Manager Certificado PMP® | Desarrollador Full-Stack | Ingeniero de IA',
+      subtitle2: 'Desarrollador Full-Stack | Ingeniero de IA',
+      description: 'Conectando gestión de proyectos, desarrollo de software e integración de IA para entregar soluciones que escalan.',
       linkedin: 'Conectar en LinkedIn',
       certifications: 'Ver Certificaciones'
     },
     about: {
       title: 'Sobre Mí',
-      description: 'Soy un <strong>Project Manager certificado PMP®</strong> y <strong>desarrollador autodidacta</strong> con más de <strong>6 años de experiencia</strong> liderando proyectos de IT, telecomunicaciones y desarrollo de software. Mi enfoque combina la excelencia en gestión de proyectos (siguiendo estándares PMI) con desarrollo práctico para entregar soluciones que resuelven problemas del mundo real.',
+      description: 'Soy <strong>Project Manager certificado PMP®</strong> y <strong>Desarrollador Full-Stack</strong> con más de <strong>6 años de experiencia</strong> liderando proyectos de IT, telecomunicaciones y software. Trabajo en tres ejes: <strong>Gestión de proyectos</strong> (estándares PMI, control de riesgos, alineación con stakeholders), <strong>Desarrollo de software</strong> (de MVP a producción con Python, TypeScript y stacks modernos) e <strong>Integración de IA</strong> (automatización, decisiones asistidas e workflows inteligentes).',
       philosophy: 'Mi Filosofía',
       philosophyPoints: {
         mvp: 'Comenzar con un <strong>MVP</strong> e iterar basado en retroalimentación real',
@@ -21,7 +21,7 @@ export const translations = {
         learn: 'Mantenerse humilde y aprender algo nuevo cada día',
         pmi: 'Aplicar <strong>metodologías PMI</strong> para asegurar calidad y entrega estructurada'
       },
-      specialization: 'Me especializo en <strong>automatización Python</strong>, <strong>desarrollo full-stack</strong>, y actuando como <strong>Data Translator</strong>—conectando la brecha entre necesidades de negocio e implementación técnica. He reducido exitosamente <strong>los tiempos de procesamiento operativo en un 99.5%</strong> a través de automatización inteligente y optimización de flujos de trabajo.'
+      specialization: 'Actúo como <strong>Data Translator</strong> en iniciativas de migración y transformación. He reducido <strong>los tiempos de procesamiento operativo en un 99.5%</strong> con automatización e optimización de flujos, y liderado <strong>7 proyectos simultáneos</strong> en IT, telecom y desarrollo de software.'
     },
     certifications: {
       title: 'Certificaciones y Credenciales',
@@ -57,7 +57,7 @@ export const translations = {
     },
     contact: {
       title: 'Conectemos',
-      description: 'Siempre estoy abierto a discutir oportunidades de gestión de proyectos, proyectos de desarrollo full-stack, soluciones de automatización y colaboraciones para resolución de problemas.',
+      description: 'Abierto a oportunidades en gestión de proyectos, desarrollo full-stack, automatización e integración de IA.',
       linkedin: 'Conectar conmigo profesionalmente',
       credly: 'Ver todas mis certificaciones',
       getInTouch: 'Ponte en Contacto',
@@ -67,15 +67,15 @@ export const translations = {
   en: {
     hero: {
       title: 'Arnold Torres Larriega',
-      subtitle1: 'PMP® Certified Project Manager',
-      subtitle2: 'Full-Stack Developer | Python Automation Specialist',
-      description: 'Transforming business requirements into technical solutions. Building MVPs that evolve into production-ready applications.',
+      subtitle1: 'PMP® Certified Project Manager | Full-Stack Developer | AI Engineer',
+      subtitle2: 'Full-Stack Developer | AI Engineer',
+      description: 'Bridging project management, software development, and AI integration to deliver solutions that scale.',
       linkedin: 'Connect on LinkedIn',
       certifications: 'View Certifications'
     },
     about: {
       title: 'About Me',
-      description: 'I\'m a <strong>PMP® certified Project Manager</strong> and <strong>self-taught developer</strong> with over <strong>6 years of experience</strong> leading IT, telecom, and software projects. My approach combines project management excellence (following PMI standards) with hands-on development to deliver solutions that solve real-world problems.',
+      description: 'I\'m a <strong>PMP® certified Project Manager</strong> and <strong>Full-Stack Developer</strong> with over <strong>6 years of experience</strong> leading IT, telecom, and software projects. I focus on three areas: <strong>Project Management</strong> (PMI standards, risk control, stakeholder alignment), <strong>Software Development</strong> (MVP to production with Python, TypeScript, modern stacks), and <strong>AI Integration</strong> (automation, decision support, intelligent workflows).',
       philosophy: 'My Philosophy',
       philosophyPoints: {
         mvp: 'Start with an <strong>MVP</strong> and iterate based on real feedback',
@@ -84,7 +84,7 @@ export const translations = {
         learn: 'Stay humble and learn something new every day',
         pmi: 'Apply <strong>PMI methodologies</strong> to ensure quality and structured delivery'
       },
-      specialization: 'I specialize in <strong>Python automation</strong>, <strong>full-stack development</strong>, and acting as a <strong>Data Translator</strong>—bridging the gap between business needs and technical implementation. I\'ve successfully <strong>reduced operational processing times by 99.5%</strong> through intelligent automation and workflow optimization.'
+      specialization: 'I act as <strong>Data Translator</strong> in migration and transformation initiatives. I\'ve <strong>reduced operational processing time by 99.5%</strong> through automation and workflow optimization, and led <strong>7 simultaneous projects</strong> in IT, telecom, and software development.'
     },
     certifications: {
       title: 'Certifications & Credentials',
@@ -120,7 +120,7 @@ export const translations = {
     },
     contact: {
       title: 'Let\'s Connect',
-      description: 'I\'m always open to discussing project management opportunities, full-stack development projects, automation solutions, and problem-solving collaborations.',
+      description: 'Open to project management, full-stack development, automation, and AI integration opportunities.',
       linkedin: 'Connect with me professionally',
       credly: 'View all my certifications',
       getInTouch: 'Get in Touch',

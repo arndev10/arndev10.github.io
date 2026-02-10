@@ -25,9 +25,9 @@ export default function Home() {
         type="button"
         onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
         className="fixed top-6 right-6 z-50 font-mono text-sm px-4 py-2 rounded border border-navy-500 text-navy-300 hover:text-accent hover:border-accent bg-navy-950/90 backdrop-blur-sm transition-colors"
-        aria-label={language === 'es' ? 'Versión en inglés' : 'Spanish version'}
+        aria-label={language === 'en' ? 'Versión en español' : 'English version'}
       >
-        {language === 'es' ? 'EN' : 'ES'}
+        {language === 'en' ? 'ES' : 'EN'}
       </button>
       <Sidebar />
       <main

@@ -28,15 +28,17 @@ export default function About() {
         <ul className="grid grid-cols-2 gap-2 font-mono text-sm text-navy-400">
           {[
             'Python',
-            'JavaScript',
             'TypeScript',
+            'FastAPI',
             'React',
             'Next.js',
-            'FastAPI',
-            'SQL',
+            'TailwindCSS',
+            'PyTorch',
+            'Whisper',
+            'LLMs',
+            'n8n',
             'PMI / Agile',
-            'Scrum',
-            'IA expert',
+            'Git / GitHub',
           ].map((tech) => (
             <li key={tech} className="flex items-center gap-2">
               <span className="text-accent">▹</span>
