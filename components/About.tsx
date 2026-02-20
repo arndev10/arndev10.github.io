@@ -22,30 +22,46 @@ export default function About() {
           className="text-navy-300"
           dangerouslySetInnerHTML={{ __html: t.specialization }}
         />
-        <p className="text-navy-300">
-          {language === 'es' ? 'Algunas tecnologías con las que trabajo:' : 'Some technologies I work with:'}
-        </p>
-        <ul className="grid grid-cols-2 gap-2 font-mono text-sm text-navy-400">
-          {[
-            'Python',
-            'TypeScript',
-            'FastAPI',
-            'React',
-            'Next.js',
-            'TailwindCSS',
-            'PyTorch',
-            'Whisper',
-            'LLMs',
-            'n8n',
-            'PMI / Agile',
-            'Git / GitHub',
-          ].map((tech) => (
-            <li key={tech} className="flex items-center gap-2">
-              <span className="text-accent">▹</span>
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+          <div>
+            <p className="text-navy-200 text-sm font-semibold mb-2 font-mono">
+              {language === 'es' ? 'Operaciones & Gestión' : 'Operations & Management'}
+            </p>
+            <ul className="space-y-1 font-mono text-sm text-navy-400">
+              {[
+                language === 'es' ? 'Coordinación cross-funcional' : 'Cross-functional coordination',
+                language === 'es' ? 'Gestión de proveedores' : 'Vendor & procurement mgmt',
+                language === 'es' ? 'KPIs & monitoreo de riesgo' : 'KPIs & risk monitoring',
+                'Agile / Scrum / Kanban',
+                language === 'es' ? 'Comunicación con stakeholders' : 'Stakeholder communication',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="text-accent">▹</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-navy-200 text-sm font-semibold mb-2 font-mono">
+              {language === 'es' ? 'Tecnología & Automatización' : 'Technology & Automation'}
+            </p>
+            <ul className="space-y-1 font-mono text-sm text-navy-400">
+              {[
+                'Python / FastAPI / SQLAlchemy',
+                'TypeScript / React / Next.js',
+                'n8n / workflow automation',
+                'CI/CD / Git / Docker',
+                language === 'es' ? 'IA / LLMs / data pipelines' : 'AI / LLMs / data pipelines',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="text-accent">▹</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   )

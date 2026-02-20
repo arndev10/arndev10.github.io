@@ -97,7 +97,7 @@ export default function Experience() {
         ))}
       </div>
       <a
-        href="https://www.linkedin.com/in/arnoldtorrespmpdev/"
+        href="https://drive.google.com/file/d/1b94Q2qcyLXALaZD2jpbM2ijKFKnItoSq/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block mt-8 font-mono text-sm text-accent hover:underline"

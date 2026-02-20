@@ -5,46 +5,39 @@ import { translations } from '@/lib/translations'
 
 const projects = [
   {
+    name: 'ESSAR-V1',
+    descriptionEs: 'Los equipos de proyecto generaban reportes Excel manualmente, consumiendo horas por semana. Construí un sistema de automatización que procesa datos estructurados, genera reportes y elimina cuellos de botella manuales — reduciendo tiempos de procesamiento de horas a minutos.',
+    descriptionEn: 'Project teams spent hours per week generating Excel reports manually. I built an automation system that processes structured data, generates reports, and eliminates manual bottlenecks — reducing processing time from hours to minutes.',
+    tech: ['Python', 'pandas', 'openpyxl', 'PyInstaller'],
+    github: 'https://github.com/arndev10/ESSAR-V1',
+  },
+  {
     name: 'Control Fit App v1',
-    descriptionEs: 'Aplicación full-stack para seguimiento de fitness: grasa corporal, peso y progreso. Registros diarios, análisis de fotos, comidas trampa y feedback semanal con IA.',
-    descriptionEn: 'Full-stack fitness tracking: body fat, weight, and progress. Daily logs, photo analysis, cheat meal tracking, and AI-driven weekly feedback.',
+    descriptionEs: 'Necesitaba una plataforma integrada para rastrear composición corporal, hábitos y progreso físico con datos reales — no solo una app genérica. Diseñé y desarrollé un sistema full-stack con registros diarios, análisis de fotos y dashboards en tiempo real.',
+    descriptionEn: 'I needed an integrated platform to track body composition, habits, and physical progress with real data — not just a generic app. I designed and built a full-stack system with daily logging, photo analysis, and real-time dashboards.',
     tech: ['FastAPI', 'Next.js 14', 'TypeScript', 'SQLAlchemy'],
     github: 'https://github.com/arndev10/Control-fit-app-v1',
   },
   {
-    name: 'PDF to MP3 Converter',
-    descriptionEs: 'Convierte libros PDF en MP3 (~40 min por archivo) con TTS local. Sin APIs ni suscripción, totalmente offline.',
-    descriptionEn: 'Converts PDF books into MP3s (~40 min per file) using local TTS. No APIs, no subscription, fully offline.',
+    name: 'WhatsApp Audio Transcriber v2',
+    descriptionEs: 'Los mensajes de voz de WhatsApp son difíciles de buscar y revisar. Construí un transcriptor que convierte audio a texto con IA — v1 era local con Whisper, v2 está desplegada en la nube con Render + Vercel para acceso desde cualquier dispositivo.',
+    descriptionEn: 'WhatsApp voice messages are hard to search and review. I built a transcriber that converts audio to text with AI — v1 ran locally with Whisper, v2 is cloud-deployed on Render + Vercel for access from any device.',
+    tech: ['FastAPI', 'React 18', 'Whisper', 'Render', 'Vercel'],
+    github: 'https://github.com/arndev10/transcribir-audios-v2',
+  },
+  {
+    name: 'PDF to MP3 Book Converter',
+    descriptionEs: 'Quería "leer" libros PDF durante el commute sin depender de servicios de suscripción. Creé un conversor offline que transforma PDFs completos en archivos MP3 usando text-to-speech local — sin APIs, sin costos recurrentes.',
+    descriptionEn: 'I wanted to "read" PDF books during my commute without relying on subscription services. I created an offline converter that transforms full PDFs into MP3 files using local text-to-speech — no APIs, no recurring costs.',
     tech: ['Python', 'PyPDF2', 'Flask', 'ffmpeg'],
     github: 'https://github.com/arndev10/PDF-a-MP3-Conversor-de-Libros',
   },
   {
-    name: 'WhatsApp Audio Transcriber',
-    descriptionEs: 'Transcribe audios de WhatsApp a texto con Whisper local. Multi-formato (OGG, OPUS, MP3, WAV), opcional GPU, 100% privado.',
-    descriptionEn: 'Transcribes voice messages to text with local Whisper. Multi-format (OGG, OPUS, MP3, WAV), optional GPU, fully private.',
-    tech: ['FastAPI', 'React 18', 'Whisper', 'PyTorch'],
-    github: 'https://github.com/arndev10/Transcribir-audios',
-  },
-  {
     name: 'Music.io v1',
-    descriptionEs: 'Aplicación web para descubrir, reproducir y gestionar música. Construida con TypeScript y herramientas front-end modernas.',
-    descriptionEn: 'Web app for browsing, streaming, and managing music. Built with modern TypeScript and front-end tooling.',
-    tech: ['TypeScript'],
+    descriptionEs: 'Herramienta web interactiva para explorar teoría musical y analizar escalas. Construida como ejercicio de desarrollo frontend con TypeScript, enfocada en visualización musical clara.',
+    descriptionEn: 'Interactive web tool for exploring music theory and analyzing scales. Built as a frontend development exercise with TypeScript, focused on clear musical visualization.',
+    tech: ['TypeScript', 'HTML5', 'CSS3'],
     github: 'https://github.com/arndev10/Music.io-v1',
-  },
-  {
-    name: 'arndev10.github.io',
-    descriptionEs: 'Portfolio personal y showcase de proyectos en GitHub Pages. Perfil, habilidades y proyectos destacados en un solo sitio.',
-    descriptionEn: 'Personal portfolio and project showcase on GitHub Pages. Profile, skills, and featured work in a single site.',
-    tech: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    github: 'https://github.com/arndev10/arndev10.github.io',
-  },
-  {
-    name: 'ESSAR-V1',
-    descriptionEs: 'Aplicación en Python para procesamiento de datos, reportes y automatización de flujos. Análisis estructurado y exportación.',
-    descriptionEn: 'Python app for data processing, reporting, and workflow automation. Structured analysis and export.',
-    tech: ['Python'],
-    github: 'https://github.com/arndev10/ESSAR-V1',
   },
 ]
 
@@ -58,6 +51,7 @@ export default function Projects() {
         <span className="text-accent">03.</span>
         {t.title}
       </h2>
+      <p className="text-navy-300 text-sm mb-8 max-w-[600px]">{t.subtitle}</p>
       <div className="space-y-8">
         {projects.map((project, index) => (
           <article

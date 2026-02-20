@@ -4,24 +4,24 @@ export const translations = {
   es: {
     hero: {
       title: 'Arnold Torres Larriega',
-      subtitle1: 'Project Manager Certificado PMP® | Desarrollador Full-Stack | Ingeniero de IA',
+      subtitle1: 'Project Manager PMP® | Automatización de Procesos e IA | Coordinación Operativa',
       subtitle2: 'Desarrollador Full-Stack | Ingeniero de IA',
-      description: 'Conectando gestión de proyectos, desarrollo de software e integración de IA para entregar soluciones que escalan.',
+      description: 'Combino gestión estructurada de proyectos, desarrollo de software y automatización con IA para eliminar cuellos de botella y escalar operaciones.',
       linkedin: 'Conectar en LinkedIn',
       certifications: 'Ver Certificaciones'
     },
     about: {
       title: 'Sobre Mí',
-      description: 'Soy <strong>Project Manager certificado PMP®</strong> y <strong>Desarrollador Full-Stack</strong> con más de <strong>6 años de experiencia</strong> liderando proyectos de IT, telecomunicaciones y software. Trabajo en tres ejes: <strong>Gestión de proyectos</strong> (estándares PMI, control de riesgos, alineación con stakeholders), <strong>Desarrollo de software</strong> (de MVP a producción con Python, TypeScript y stacks modernos) e <strong>Integración de IA</strong> (automatización, decisiones asistidas e workflows inteligentes).',
-      philosophy: 'Mi Filosofía',
+      description: 'Soy <strong>Project Manager certificado PMP®</strong> con más de <strong>6 años liderando proyectos operacionales, logísticos y técnicos</strong> en entornos multi-stakeholder. Combino entrega estructurada de proyectos con desarrollo de software hands-on y automatización con IA para eliminar cuellos de botella, optimizar flujos de trabajo y mejorar la visibilidad operativa.',
+      philosophy: 'Lo que me diferencia',
       philosophyPoints: {
-        mvp: 'Comenzar con un <strong>MVP</strong> e iterar basado en retroalimentación real',
-        problems: 'Enfocarse en <strong>resolver problemas reales</strong>, no solo construir funcionalidades',
-        improve: 'Mejorar continuamente a través de <strong>desarrollo iterativo</strong>',
-        learn: 'Mantenerse humilde y aprender algo nuevo cada día',
-        pmi: 'Aplicar <strong>metodologías PMI</strong> para asegurar calidad y entrega estructurada'
+        mvp: 'Coordinar <strong>equipos de campo, proveedores y cadenas de suministro</strong> bajo SLAs estrictos',
+        problems: 'Construir <strong>automatizaciones</strong> que redujeron esfuerzo operativo repetitivo en <strong>99.5%</strong>',
+        improve: 'Traducir <strong>datos complejos</strong> en reportes accionables para stakeholders operativos y ejecutivos',
+        learn: 'Desarrollar soluciones full-stack de <strong>MVP a producción</strong> con Python, TypeScript y stacks modernos',
+        pmi: 'Aplicar <strong>metodologías PMI, Agile e híbridas</strong> adaptadas a cada contexto operativo'
       },
-      specialization: 'Actúo como <strong>Data Translator</strong> en iniciativas de migración y transformación. He reducido <strong>los tiempos de procesamiento operativo en un 99.5%</strong> con automatización e optimización de flujos, y liderado <strong>7 proyectos simultáneos</strong> en IT, telecom y desarrollo de software.'
+      specialization: 'Actúo como <strong>Data Translator</strong> entre equipos técnicos y de negocio. He liderado <strong>7 proyectos simultáneos</strong> en telecomunicaciones, logística y desarrollo de software, gestionando portfolios que superan <strong>$1.5M USD anuales</strong>. Abierto a reubicación internacional.'
     },
     certifications: {
       title: 'Certificaciones y Credenciales',
@@ -49,7 +49,7 @@ export const translations = {
     },
     projects: {
       title: 'Proyectos Destacados',
-      subtitle: 'Soluciones del mundo real construidas con enfoque MVP, siguiendo estándares PMI, y mejoradas continuamente mediante desarrollo iterativo',
+      subtitle: 'Problemas reales, soluciones reales — cada proyecto nació de una necesidad concreta y fue construido de MVP a producción',
       viewGitHub: 'Ver en GitHub →',
       approach: 'Enfoque de Desarrollo:',
       features: 'Características Clave:',
@@ -57,7 +57,7 @@ export const translations = {
     },
     contact: {
       title: 'Conectemos',
-      description: 'Abierto a oportunidades en gestión de proyectos, desarrollo full-stack, automatización e integración de IA.',
+      description: 'Abierto a oportunidades en gestión de proyectos, coordinación operativa, automatización de procesos e integración de IA. Disponible para reubicación internacional.',
       linkedin: 'Conectar conmigo profesionalmente',
       credly: 'Ver todas mis certificaciones',
       getInTouch: 'Ponte en Contacto',
@@ -67,24 +67,24 @@ export const translations = {
   en: {
     hero: {
       title: 'Arnold Torres Larriega',
-      subtitle1: 'PMP® Certified Project Manager | Full-Stack Developer | AI Engineer',
+      subtitle1: 'PMP® Project Manager | Process Automation & AI | Operational Coordination',
       subtitle2: 'Full-Stack Developer | AI Engineer',
-      description: 'Bridging project management, software development, and AI integration to deliver solutions that scale.',
+      description: 'I combine structured project delivery, software development, and AI-driven automation to eliminate bottlenecks and scale operations.',
       linkedin: 'Connect on LinkedIn',
       certifications: 'View Certifications'
     },
     about: {
       title: 'About Me',
-      description: 'I\'m a <strong>PMP® certified Project Manager</strong> and <strong>Full-Stack Developer</strong> with over <strong>6 years of experience</strong> leading IT, telecom, and software projects. I focus on three areas: <strong>Project Management</strong> (PMI standards, risk control, stakeholder alignment), <strong>Software Development</strong> (MVP to production with Python, TypeScript, modern stacks), and <strong>AI Integration</strong> (automation, decision support, intelligent workflows).',
-      philosophy: 'My Philosophy',
+      description: 'I\'m a <strong>PMP®-certified Project Manager</strong> with over <strong>6 years leading operational, logistics, and technical projects</strong> across multi-stakeholder environments. I combine structured project delivery with hands-on software development and AI-driven automation to eliminate bottlenecks, streamline workflows, and improve operational visibility.',
+      philosophy: 'What sets me apart',
       philosophyPoints: {
-        mvp: 'Start with an <strong>MVP</strong> and iterate based on real feedback',
-        problems: 'Focus on <strong>solving actual problems</strong>, not just building features',
-        improve: 'Continuously improve through <strong>iterative development</strong>',
-        learn: 'Stay humble and learn something new every day',
-        pmi: 'Apply <strong>PMI methodologies</strong> to ensure quality and structured delivery'
+        mvp: 'Coordinate <strong>field teams, vendors, and supply chains</strong> under strict client SLAs',
+        problems: 'Build <strong>automation systems</strong> that reduced repetitive operational effort by <strong>99.5%</strong>',
+        improve: 'Translate <strong>complex data</strong> into actionable reporting for operational and executive stakeholders',
+        learn: 'Develop full-stack solutions from <strong>MVP to production</strong> with Python, TypeScript, and modern stacks',
+        pmi: 'Apply <strong>PMI, Agile, and hybrid methodologies</strong> adapted to each operational context'
       },
-      specialization: 'I act as <strong>Data Translator</strong> in migration and transformation initiatives. I\'ve <strong>reduced operational processing time by 99.5%</strong> through automation and workflow optimization, and led <strong>7 simultaneous projects</strong> in IT, telecom, and software development.'
+      specialization: 'I act as a <strong>Data Translator</strong> between technical and business teams. I\'ve led <strong>7 simultaneous projects</strong> in telecommunications, logistics, and software development, managing portfolios exceeding <strong>$1.5M USD annually</strong>. Open to international relocation.'
     },
     certifications: {
       title: 'Certifications & Credentials',
@@ -112,7 +112,7 @@ export const translations = {
     },
     projects: {
       title: 'Featured Projects',
-      subtitle: 'Real-world solutions built with MVP approach, following PMI standards, and continuously improved through iterative development',
+      subtitle: 'Real problems, real solutions — each project was born from a concrete need and built from MVP to production',
       viewGitHub: 'View on GitHub →',
       approach: 'Development Approach:',
       features: 'Key Features:',
@@ -120,7 +120,7 @@ export const translations = {
     },
     contact: {
       title: 'Let\'s Connect',
-      description: 'Open to project management, full-stack development, automation, and AI integration opportunities.',
+      description: 'Open to project management, operational coordination, process automation, and AI integration opportunities. Available for international relocation.',
       linkedin: 'Connect with me professionally',
       credly: 'View all my certifications',
       getInTouch: 'Get in Touch',
