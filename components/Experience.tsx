@@ -18,7 +18,7 @@ const experience = [
     period: 'Oct 2023 – Oct 2025',
     location: 'Lima, Perú',
     achievementsKey: 'msi',
-    tech: ['Python', 'Agile', 'Stakeholder Mgmt', 'Automation'],
+    tech: ['Python', 'Agile/SCRUM', 'Stakeholder Mgmt', 'Automation', 'Data Analysis'],
   },
   {
     titleKey: 'pmFreelance',
@@ -26,7 +26,15 @@ const experience = [
     period: 'Feb 2022 – Oct 2023',
     location: 'Lima, Perú',
     achievementsKey: 'freelance',
-    tech: ['Scrum', 'Kanban', 'Risk Mgmt', 'Data Analysis'],
+    tech: ['Scrum', 'Kanban', 'KPI Dashboards', 'Risk Analysis'],
+  },
+  {
+    titleKey: 'freight',
+    company: 'Tristar Transit',
+    period: 'Oct 2019 – Jun 2021',
+    location: 'Los Angeles, California',
+    achievementsKey: 'tristar',
+    tech: ['Logistics', 'TMS', 'CRM', 'Operations'],
   },
 ]
 
@@ -38,44 +46,55 @@ export default function Experience() {
     fsd: language === 'es' ? 'Full Stack Developer' : 'Full Stack Developer',
     pm: language === 'es' ? 'Project Manager' : 'Project Manager',
     pmFreelance: language === 'es' ? 'Project Manager Freelancer' : 'Project Manager Freelancer',
+    freight: language === 'es' ? 'Freight Coordinator' : 'Freight Coordinator',
   }
 
   const achievements: Record<string, string[]> = {
     fullstack:
       language === 'es'
         ? [
-            'Desarrollo de aplicaciones web full-stack con React, Next.js, TypeScript y Python',
-            'Integración de IA y automatización en soluciones de producción',
-            'Diseño e implementación de APIs REST con FastAPI y bases de datos',
+            'Desarrollo de aplicaciones web full-stack: fitness tracker, transcriptor de audio con IA, conversor PDF a MP3',
+            'Integración de modelos de IA (Whisper, LLMs) en flujos de producción con FastAPI y React',
+            'Deploy en cloud (Render + Vercel) y CI/CD con GitHub Actions',
           ]
         : [
-            'Full-stack web application development with React, Next.js, TypeScript, and Python',
-            'AI integration and automation in production solutions',
-            'REST API design and implementation with FastAPI and databases',
+            'Full-stack web app development: fitness tracker, AI audio transcriber, PDF to MP3 converter',
+            'AI model integration (Whisper, LLMs) into production workflows with FastAPI and React',
+            'Cloud deployment (Render + Vercel) and CI/CD with GitHub Actions',
           ],
     msi:
       language === 'es'
         ? [
-            'Lideré 7 proyectos simultáneos en telecomunicaciones, logística, pruebas de señal y desarrollo de software',
-            'Implementé metodologías ágiles e híbridas adaptadas a cada cliente',
-            'Diseñé e implementé automatizaciones reduciendo tareas repetitivas en ~99%',
+            'Gestioné 7 proyectos concurrentes en telecomunicaciones, logística y operaciones de campo',
+            'Construí sistemas de automatización que redujeron el esfuerzo operativo repetitivo en un 99%',
+            'Coordiné equipos de campo, proveedores y tiempos de procurement bajo SLAs estrictos de clientes',
           ]
         : [
-            'Led 7 simultaneous projects in telecommunications, logistics, field signal testing, and software development',
-            'Implemented Agile and hybrid methodologies adapted to each client',
-            'Designed and implemented automations reducing repetitive tasks by ~99%',
+            'Managed 7 concurrent projects across telecom, logistics, and field service operations',
+            'Built workflow automation systems that reduced repetitive operational effort by 99%',
+            'Coordinated field teams, vendors, and procurement timelines under strict client SLAs',
           ],
     freelance:
       language === 'es'
         ? [
-            'Implementé Scrum y Kanban para seguimiento de proyectos',
-            'Mitigué riesgos operativos y financieros',
-            'Gestioné proyectos conforme a estándares internacionales',
+            'Implementé frameworks Scrum/Kanban para equipos operativos y técnicos en entornos de ingeniería',
+            'Diseñé dashboards de KPIs y sistemas de tracking para mejorar la visibilidad de procesos en flujos logísticos',
+            'Realicé análisis de riesgo operativo y financiero para mantener rentabilidad y estabilidad en entregas',
           ]
         : [
-            'Implemented Scrum and Kanban for project tracking',
-            'Mitigated operational and financial risks',
-            'Managed projects under international standards',
+            'Implemented Scrum/Kanban frameworks for operational and technical teams in engineering environments',
+            'Designed KPI dashboards and tracking systems to improve process visibility across logistics workflows',
+            'Conducted operational and financial risk analysis to maintain project profitability and delivery stability',
+          ],
+    tristar:
+      language === 'es'
+        ? [
+            'Coordinación end-to-end de cargas en entornos logísticos de alto volumen, optimizando tiempos de entrega y cumplimiento regulatorio',
+            'Uso de TMS (Transportation Management Systems) y CRM para tracking de envíos y optimización de operaciones',
+          ]
+        : [
+            'Managed end-to-end freight coordination in high-volume logistics environments, optimizing delivery timelines and ensuring regulatory compliance',
+            'Utilized TMS (Transportation Management Systems) and CRM tools to track shipments and streamline operations',
           ],
   }
 
