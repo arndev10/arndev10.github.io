@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 const navItems = [
   { id: 'about', en: 'About', es: 'Sobre mí' },
   { id: 'experience', en: 'Experience', es: 'Experiencia' },
+  { id: 'education', en: 'Education', es: 'Educación' },
   { id: 'projects', en: 'Projects', es: 'Proyectos' },
   { id: 'contact', en: 'Contact', es: 'Contacto' },
 ]
@@ -36,7 +37,7 @@ export default function Sidebar() {
             className="group flex flex-col items-center gap-1 text-navy-300 hover:text-accent transition-colors"
             aria-label={language === 'es' ? item.es : item.en}
           >
-            <span className="text-xs font-mono">{item.id === 'about' ? '01.' : item.id === 'experience' ? '02.' : item.id === 'projects' ? '03.' : '04.'}</span>
+            <span className="text-xs font-mono">{`0${navItems.indexOf(item) + 1}.`}</span>
             <span className="text-[10px] lg:text-xs font-medium hidden lg:block">
               {language === 'es' ? item.es : item.en}
             </span>

@@ -7,6 +7,7 @@ const Sidebar = dynamic(() => import('@/components/Sidebar'), { ssr: false })
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const About = dynamic(() => import('@/components/About'), { ssr: false })
 const Experience = dynamic(() => import('@/components/Experience'), { ssr: false })
+const Education = dynamic(() => import('@/components/Education'), { ssr: false })
 const Projects = dynamic(() => import('@/components/Projects'), { ssr: false })
 const Contact = dynamic(() => import('@/components/Contact'), { ssr: false })
 
@@ -38,6 +39,7 @@ export default function Home() {
           <Hero />
           <About />
           <Experience />
+          <Education />
           <Projects />
           <Contact />
         </div>

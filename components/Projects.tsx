@@ -48,7 +48,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20">
       <h2 className="flex items-center gap-3 text-2xl font-bold text-navy-50 mb-6 font-mono after:content-[''] after:flex-1 after:h-px after:max-w-[200px] after:bg-navy-500">
-        <span className="text-accent">03.</span>
+        <span className="text-accent">04.</span>
         {t.title}
       </h2>
       <p className="text-navy-300 text-sm mb-8 max-w-[600px]">{t.subtitle}</p>

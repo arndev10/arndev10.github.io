@@ -6,9 +6,9 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Arnold Torres Larriega | PMP® Certified Project Manager & Full-Stack Developer',
-  description: 'PMP® Certified Project Manager with 6+ years of experience. Specialized in Python automation, full-stack development, and transforming business requirements into technical solutions.',
-  keywords: 'Project Manager, PMP, Full-Stack Developer, Python Automation, PMI, Software Development',
+  title: 'Arnold Torres Larriega | PMP® Project Manager | Process Automation & AI',
+  description: 'PMP®-certified Project Manager with 6+ years leading operational, logistics, and technical projects. Automation, AI integration, full-stack development. Open to international relocation.',
+  keywords: 'Project Manager, PMP, Process Automation, AI, Operational Coordination, Full-Stack Developer, Logistics, Supply Chain',
 }
 
 export default function RootLayout({
