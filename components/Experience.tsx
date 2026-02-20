@@ -5,9 +5,17 @@ import { translations } from '@/lib/translations'
 
 const experience = [
   {
+    titleKey: 'fsd',
+    company: 'Freelance',
+    period: '2026 – Present',
+    location: 'Lima, Perú',
+    achievementsKey: 'fullstack',
+    tech: ['TypeScript', 'React', 'Next.js', 'Python', 'FastAPI', 'AI/LLMs'],
+  },
+  {
     titleKey: 'pm',
     company: 'MSI Americas',
-    period: 'Oct 2023 – Present',
+    period: 'Oct 2023 – Oct 2025',
     location: 'Lima, Perú',
     achievementsKey: 'msi',
     tech: ['Python', 'Agile', 'Stakeholder Mgmt', 'Automation'],
@@ -27,22 +35,35 @@ export default function Experience() {
   const t = translations[language].experience
 
   const titles: Record<string, string> = {
+    fsd: language === 'es' ? 'Full Stack Developer' : 'Full Stack Developer',
     pm: language === 'es' ? 'Project Manager' : 'Project Manager',
     pmFreelance: language === 'es' ? 'Project Manager Freelancer' : 'Project Manager Freelancer',
   }
 
   const achievements: Record<string, string[]> = {
+    fullstack:
+      language === 'es'
+        ? [
+            'Desarrollo de aplicaciones web full-stack con React, Next.js, TypeScript y Python',
+            'Integración de IA y automatización en soluciones de producción',
+            'Diseño e implementación de APIs REST con FastAPI y bases de datos',
+          ]
+        : [
+            'Full-stack web application development with React, Next.js, TypeScript, and Python',
+            'AI integration and automation in production solutions',
+            'REST API design and implementation with FastAPI and databases',
+          ],
     msi:
       language === 'es'
         ? [
             'Lideré 7 proyectos simultáneos en telecomunicaciones, logística, pruebas de señal y desarrollo de software',
             'Implementé metodologías ágiles e híbridas adaptadas a cada cliente',
-            'Diseñé e implementé automatizaciones reduciendo tareas repetitivas en 99.5%',
+            'Diseñé e implementé automatizaciones reduciendo tareas repetitivas en ~99%',
           ]
         : [
             'Led 7 simultaneous projects in telecommunications, logistics, field signal testing, and software development',
             'Implemented Agile and hybrid methodologies adapted to each client',
-            'Designed and implemented automations reducing repetitive tasks by 99.5%',
+            'Designed and implemented automations reducing repetitive tasks by ~99%',
           ],
     freelance:
       language === 'es'
