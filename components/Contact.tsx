@@ -24,9 +24,7 @@ export default function Contact() {
       </a>
       <div className="mt-12 pt-8 border-t border-navy-600">
         <p className="font-mono text-xs text-navy-500">
-          {language === 'es'
-            ? 'Diseñado y desarrollado con Next.js y Tailwind. Tipografía Inter.'
-            : 'Designed and built with Next.js and Tailwind. Inter typeface.'}
+          Made by Arndev10
         </p>
       </div>
     </section>
