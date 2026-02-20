@@ -12,16 +12,16 @@ export const translations = {
     },
     about: {
       title: 'Sobre Mí',
-      description: 'Soy <strong>Project Manager certificado PMP®</strong> con más de <strong>6 años liderando proyectos operacionales, logísticos y técnicos</strong> en entornos multi-stakeholder. Combino entrega estructurada de proyectos con desarrollo de software hands-on y automatización con IA para eliminar cuellos de botella, optimizar flujos de trabajo y mejorar la visibilidad operativa.',
+      description: '<strong>Project Manager certificado PMP®</strong> con más de <strong>6 años liderando proyectos operativos y técnicos</strong> en entornos multistakeholder, incluyendo telecomunicaciones, logística y desarrollo de software.<br/><br/>Combino entrega estructurada con <strong>automatización (incl. IA)</strong> e integración de sistemas para eliminar cuellos de botella, simplificar flujos y fortalecer la visibilidad operativa. He coordinado operaciones de campo, proveedores y clientes internacionales, alineando ejecución, calidad y tiempos de entrega bajo estándares exigentes.',
       philosophy: 'Lo que me diferencia',
       philosophyPoints: {
         mvp: 'Coordinar <strong>equipos de campo, proveedores y cadenas de suministro</strong> bajo SLAs estrictos',
-        problems: 'Construir <strong>automatizaciones</strong> que redujeron esfuerzo operativo repetitivo en <strong>99.5%</strong>',
+        problems: 'Construir <strong>automatizaciones</strong> que redujeron esfuerzo operativo repetitivo en <strong>~99%</strong>',
         improve: 'Traducir <strong>datos complejos</strong> en reportes accionables para stakeholders operativos y ejecutivos',
         learn: 'Desarrollar soluciones full-stack de <strong>MVP a producción</strong> con Python, TypeScript y stacks modernos',
         pmi: 'Aplicar <strong>metodologías PMI, Agile e híbridas</strong> adaptadas a cada contexto operativo'
       },
-      specialization: 'Actúo como <strong>Data Translator</strong> entre equipos técnicos y de negocio. He liderado <strong>7 proyectos simultáneos</strong> en telecomunicaciones, logística y desarrollo de software, gestionando portfolios que superan <strong>$1.5M USD anuales</strong>. Abierto a reubicación internacional.'
+      specialization: 'He diseñado e implementado <strong>automatizaciones que redujeron el esfuerzo repetitivo en ~99%</strong>, mejorando control, reporting y toma de decisiones en equipos multidisciplinarios.<br/><br/>Me especializo en <strong>ejecución ordenada, claridad operativa y mejora continua</strong>, integrando pensamiento sistémico y tecnología para optimizar resultados.'
     },
     certifications: {
       title: 'Certificaciones y Credenciales',
@@ -75,16 +75,16 @@ export const translations = {
     },
     about: {
       title: 'About Me',
-      description: 'I\'m a <strong>PMP®-certified Project Manager</strong> with over <strong>6 years leading operational, logistics, and technical projects</strong> across multi-stakeholder environments. I combine structured project delivery with hands-on software development and AI-driven automation to eliminate bottlenecks, streamline workflows, and improve operational visibility.',
+      description: '<strong>PMP®-certified Project Manager</strong> with over <strong>6 years leading operational and technical projects</strong> across multi-stakeholder environments, including telecommunications, logistics, and software development.<br/><br/>I combine structured delivery with <strong>automation (incl. AI)</strong> and systems integration to eliminate bottlenecks, streamline workflows, and strengthen operational visibility. I\'ve coordinated field operations, vendors, and international clients, aligning execution, quality, and delivery timelines under demanding standards.',
       philosophy: 'What sets me apart',
       philosophyPoints: {
         mvp: 'Coordinate <strong>field teams, vendors, and supply chains</strong> under strict client SLAs',
-        problems: 'Build <strong>automation systems</strong> that reduced repetitive operational effort by <strong>99.5%</strong>',
+        problems: 'Build <strong>automation systems</strong> that reduced repetitive operational effort by <strong>~99%</strong>',
         improve: 'Translate <strong>complex data</strong> into actionable reporting for operational and executive stakeholders',
         learn: 'Develop full-stack solutions from <strong>MVP to production</strong> with Python, TypeScript, and modern stacks',
         pmi: 'Apply <strong>PMI, Agile, and hybrid methodologies</strong> adapted to each operational context'
       },
-      specialization: 'I act as a <strong>Data Translator</strong> between technical and business teams. I\'ve led <strong>7 simultaneous projects</strong> in telecommunications, logistics, and software development, managing portfolios exceeding <strong>$1.5M USD annually</strong>. Open to international relocation.'
+      specialization: 'I\'ve designed and implemented <strong>automations that reduced repetitive effort by ~99%</strong>, improving control, reporting, and decision-making across multidisciplinary teams.<br/><br/>I specialize in <strong>structured execution, operational clarity, and continuous improvement</strong>, integrating systems thinking and technology to optimize outcomes.'
     },
     certifications: {
       title: 'Certifications & Credentials',
