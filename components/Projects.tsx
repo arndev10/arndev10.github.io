@@ -7,9 +7,9 @@ const projects = [
   {
     name: 'PM AI Engine',
     descriptionEs:
-      'PM AI Engine es una herramienta web que permite a los project managers subir un contrato, SoW o RFP y generar automáticamente los documentos clave del proyecto (Project Charter, Risk Register, Stakeholder Register y WBS). En lugar de pasar horas revisando documentos y armando artefactos desde cero, la plataforma extrae la información relevante y entrega salidas estructuradas y editables en minutos, reduciendo el esfuerzo manual y acelerando el inicio del proyecto.',
+      'PM AI Engine es una SaaS que permite a los project managers subir un contrato, SoW o RFP y generar automáticamente los documentos clave del proyecto (Project Charter, Risk Register, Stakeholder Register y WBS). En lugar de pasar horas revisando documentos y armando artefactos desde cero, la plataforma extrae la información relevante y entrega salidas estructuradas y editables en minutos, reduciendo el esfuerzo manual y acelerando el inicio del proyecto.',
     descriptionEn:
-      'PM AI Engine is a web tool that allows project managers to upload a contract, SoW or RFP and automatically generate the key project documents (Project Charter, Risk Register, Stakeholder Register and WBS). Instead of spending hours reviewing documents and building artefacts from scratch, the platform extracts the relevant information and delivers structured, editable outputs in minutes — reducing manual effort and accelerating project kick-off.',
+      'PM AI Engine is a SaaS web tool that allows project managers to upload a contract, SoW or RFP and automatically generate the key project documents (Project Charter, Risk Register, Stakeholder Register and WBS). Instead of spending hours reviewing documents and building artefacts from scratch, the platform extracts the relevant information and delivers structured, editable outputs in minutes — reducing manual effort and accelerating project kick-off.',
     tech: ['Next.js 14', 'React 18', 'TypeScript', 'TailwindCSS', 'Supabase', 'OpenAI'],
     github: 'https://github.com/arndev10/PM-AI-ENGINE',
   },
